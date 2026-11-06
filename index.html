@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Счётчик кликов</title>
+</head>
+<body>
+
+<button id="btn">Кликов: 0</button>
+
+<script>
+  
+  let btn = document.getElementById('btn');
+
+
+  let count = 0;
+
+
+  btn.onclick = function() {
+    count = count + 1;
+    btn.textContent = 'Кликов: ' + count;
+
+    // звёздочка
+    if (count == 10) {
+      btn.style.color = 'red';
+    }
+  };
+</script>
+
+</body>
+</html>
